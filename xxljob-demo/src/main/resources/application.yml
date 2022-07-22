@@ -1,0 +1,21 @@
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:8080/xxl-job-admin
+    executor:
+      logpath: /data/apps/logs/demo
+      appname: xxljob-demo
+      ip: 127.0.0.1
+
+
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: lxw123
+    url: jdbc:mysql://43.142.90.152:3306/test?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+  jooq:
+    sql-dialect: mysql
