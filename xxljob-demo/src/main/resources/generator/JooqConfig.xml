@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <jdbc>
+        <driver>com.mysql.cj.jdbc.Driver</driver>
+        <url>jdbc:mysql://43.142.90.152:3306/test?serverTimezone=Asia/Shanghai</url>
+        <user>root</user>
+        <password>lxw123</password>
+    </jdbc>
+    <generator>
+        <!-- 代码生成器 -->
+        <name>org.jooq.codegen.JavaGenerator</name>
+        <database>
+            <name>org.jooq.meta.mysql.MySQLDatabase</name>
+            <includes>user</includes>
+            <inputSchema>test</inputSchema>
+        </database>
+        <generate>
+            <daos>true</daos>
+            <pojos>true</pojos>
+            <javaTimeTypes>true</javaTimeTypes>
+            <springAnnotations>false</springAnnotations>
+        </generate>
+        <target>
+            <packageName>com.xiaowei.xxljobdemo.common</packageName>
+            <directory>src/main/java</directory>
+        </target>
+    </generator>
+</configuration>
